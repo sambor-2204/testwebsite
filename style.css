@@ -1,0 +1,124 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;700;900&family=Poppins:wght@200;300;400&display=swap');
+
+/* Color Variables */
+:root {
+    /* fonts */
+    --font-family: 'Battambang', cursive;
+    --body-font: 'Poppins', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    /* Border-Radius */
+    --radius-8: 8px;
+    /* BoxShadow */
+    --box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+    /* Transition */
+    --transition: 0.3s;
+  }
+h1, h4{
+    font-family: var(--font-family)!important;
+    font-size: 34px!important;
+    margin-bottom: 20px!important;
+    font-weight: 600!important;
+}
+h4{
+  font-size: 26px!important;
+}
+p{
+    font-family: var(--font-family)!important;
+    font-size: 20px!important;
+}
+.entry-img{
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-8);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.entry-img img:hover{
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+.card{
+  border-radius: var(--radius-8)!important;
+}
+span,a{
+  font-family: var(--font-family);
+  text-decoration: none!important;
+}
+
+.logo-header{
+  width: 100px;
+  height: 100%;
+}
+.form-logo{
+  width: 120px;
+}
+
+/* Fotter */
+.btn-hover:hover{
+  color: var(--btn-color)!important;
+  transition: var(--transition);
+}
+.mt-7{
+  margin-top: 7rem!important;
+}
+.admin-img{
+  width: 40px;
+  height: 40px;
+}
+input, select, option, button, label{
+  font-family: var(--font-family)!important;
+}
+.list{
+  list-style: none;
+  font-family: var(--font-family);
+  font-size: 20px;
+}
+.entry-item{
+  width: 100%;
+  height: 265px;
+}
+/*  */
+.overflow-hidden{
+  overflow: hidden;
+}
+.ribbon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(29.29%,-100%) rotate(45deg);
+  transform-origin: bottom left;
+  z-index: 1;
+  padding: 0 2em;
+  height: 20px;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .17s ease
+}
+.onair{
+  background: linear-gradient(to right, #007bff, #dc3545);
+}
+.is-visible{
+  visibility: visible;
+  opacity: 1;
+}
+.card{
+  box-shadow: var(--box-shadow);
+}
+.description{
+  font-size: 16px!important;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.post-data{
+  font-size: 16px!important;
+}
